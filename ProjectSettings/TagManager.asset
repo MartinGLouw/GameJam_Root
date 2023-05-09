@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
+  - Air
+  - Earth
+  - Fire
+  - Water
+  - FireE
+  - WaterE
+  - EarthE
+  - AirE
   layers:
   - Default
   - TransparentFX
