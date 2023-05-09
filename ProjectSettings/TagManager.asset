@@ -13,6 +13,7 @@ TagManager:
   - WaterE
   - EarthE
   - AirE
+  - Death
   layers:
   - Default
   - TransparentFX

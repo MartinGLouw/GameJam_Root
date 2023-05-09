@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3814780135352229632}
   - component: {fileID: 3814780135352229633}
   - component: {fileID: 3814780135352229639}
+  - component: {fileID: -7326393825192457243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -169,3 +170,17 @@ MonoBehaviour:
   - {fileID: 749743088762533534, guid: d74cbaa220d57a544b913e15d298aa7b, type: 3}
   shootForce: 10
   shootPoint: {fileID: 3814780135352229634}
+--- !u!114 &-7326393825192457243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3814780135352229645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5180aa4d841f53e429a923b46b8e5f13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathTag: Death
+  SceneSet: Death
