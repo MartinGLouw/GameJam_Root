@@ -10,7 +10,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../GameDev/Project Part 1/GADE_Project-1/GADE_PART1/Assets/Exit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../GameDev/Project Part 1/GADE_Project-1/GADE_PART1/Assets/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BlockMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeafLift.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Vines.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +86,7 @@
       <updated>1683617694899</updated>
       <workItem from="1683617698372" duration="6718000" />
       <workItem from="1683625632018" duration="46000" />
-      <workItem from="1683625691241" duration="2448000" />
+      <workItem from="1683625691241" duration="4600000" />
     </task>
     <servers />
   </component>

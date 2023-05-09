@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8592674464820270182}
   - component: {fileID: -4752383763373167344}
   - component: {fileID: -7770811713327795756}
+  - component: {fileID: 2769804829521895223}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Earth
@@ -151,3 +152,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &2769804829521895223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3384268024993292214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20eda65549e1a644686ab415c2261a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyTag: Spikey
