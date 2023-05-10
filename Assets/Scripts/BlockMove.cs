@@ -29,7 +29,7 @@ public class BlockMove : MonoBehaviour
 
             else if (DirectionSet == "Right")
             {
-                targetPosition = initialPosition + Vector3.left * moveAmount;
+                targetPosition = initialPosition + Vector3.right * moveAmount;
                 
             }
         }

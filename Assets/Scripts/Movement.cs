@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb; // The rigidbody component of the player
     private bool isGrounded; // A flag to indicate if the player is on the ground
+    private bool facingRight = true; // A flag to indicate if the player is facing right
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,16 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        // Flip the sprite based on the direction of movement
+        if (horizontal < 0 && facingRight)
+        {
+            Flip();
+        }
+        else if (horizontal > 0 && !facingRight)
+        {
+            Flip();
         }
     }
 
@@ -53,5 +64,13 @@ public class Movement : MonoBehaviour
             // Set the flag to false
             isGrounded = false;
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }

@@ -17,6 +17,9 @@ public class AiMovement : MonoBehaviour
 
         // Set the direction to left by default
         movingRight = false;
+
+        // Flip the sprite initially
+        Flip();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class AiMovement : MonoBehaviour
         {
             movingRight = !movingRight;
             timer = 0f;
+            Flip();
         }
 
         // Move the object based on the direction and speed
@@ -41,5 +45,12 @@ public class AiMovement : MonoBehaviour
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
+    }
+
+    private void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }
