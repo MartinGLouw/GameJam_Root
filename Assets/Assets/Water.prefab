@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1941373334297856708}
   - component: {fileID: -2553837626202889227}
   - component: {fileID: 6117314089828894205}
+  - component: {fileID: 7706145080306593415}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 749743088762533534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.28326297, y: -0.8574113, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6.097314, y: 6.097314, z: 6.097314}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 808879577, guid: 6d9de7abefc0b6047aacfd3847ceb4ba, type: 3}
   m_Color: {r: 0, g: 0.07255786, b: 0.6226415, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,3 +152,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &7706145080306593415
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749743088762533534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb63bca9cdeb9ff41a1d15617160a559, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

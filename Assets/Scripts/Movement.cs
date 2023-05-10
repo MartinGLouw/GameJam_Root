@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb; // The rigidbody component of the player
     private bool isGrounded; // A flag to indicate if the player is on the ground
     private bool facingRight = true; // A flag to indicate if the player is facing right
+    public bool Moving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,12 +37,34 @@ public class Movement : MonoBehaviour
         // Flip the sprite based on the direction of movement
         if (horizontal < 0 && facingRight)
         {
+            
             Flip();
         }
         else if (horizontal > 0 && !facingRight)
         {
+            
             Flip();
         }
+        
+    }
+
+    public void Movementing()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Moving = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Moving = true;        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            Moving = true;        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Moving = true;        }
+
+        Moving = false;
     }
 
     // A method that is called when the collider enters contact with another collider
