@@ -6,7 +6,6 @@ public class PlayerShooting : MonoBehaviour
     public GameObject[] projectiles; // The array of projectile prefabs
     public float shootForce = 10f; // The force of the shooting
     public Transform shootPoint; // The position to shoot from
-
     private int currentProjectile; // The index of the current projectile
     private Vector2 direction; // The direction of the shooting
 
@@ -77,5 +76,9 @@ public class PlayerShooting : MonoBehaviour
 
         // Apply a force to the projectile in the direction of the movement key
         rb.AddForce(direction * shootForce, ForceMode2D.Impulse);
+
+         // Rotate the projectile to face the direction of shooting
+         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+         projectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 }
